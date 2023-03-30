@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/conversion.css">
+</head>
+<body>
+    
+<section>
+
+
+    <div class="dropdown ">
+        <select id="converter" onclick="next()" class="custom-select list p-2 col-lg-3 col-md-6 col-6">
+            <option selected>Measurement</option>
+            <option  class="pb-4" id="Kilometer"  value="Kilometer - Mile">Kilometer - Mile</option>
+            <option  class="pb-4" id="Mile"  value="Mile - Kilometer">Mile - Kilometer</option>
+            <option  class="pb-4" id="Inches"  value="Inches - Centimeter">Inches - Centimeter</option>
+            <option  class="pb-4" id="Centimeters"  value="Centimeter - Inches">Centimeter - Inches </option>
+            <option  class="pb-4" id="Pounds"  value="Pounds - Kg">Pounds - Kg </option>
+            <option  class="pb-4" id="Kg"  value="Kg - Pounds">Kg - Pounds </option>
+          </select>
+
+          <input type="text" id="Metric" name="" class="p-2 col-lg-3 col-md-6 col-6" placeholder="Metric" >
+
+          <button onclick="convert()" class="p-2 col-lg-2 col-md-6 col-6">Convert</button>
+
+          <input type="text"id="Result" name="" class="p-2 col-lg-3 col-md-6 col-6" placeholder="Result" >
+    </div>
+</section>
+</body>
+<script src="./conversion.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</html>
